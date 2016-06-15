@@ -1,18 +1,27 @@
-//business logic
-function Game(addnum) {
-    this.newnum = addnum;
-}
-
 // user interface logic
 $(document).ready(function() {
     $("form#counter").submit(function(event) {
         event.preventDefault();
 
-        var inputtednumber = $("input#number").val();
-        var newNumber = new Game(inputtednumber);
+        var inNum = Number($("input#number").val());
 
 
-        $("ul#list").append("<li><span class='game'>" + newNumber.newnum +"</span></li>");
-        $("input#number").val("");
+
+
+
+
+
+
+        $("ul#list").prepend("<li><span class='game'>" + inNum + "</span></li>");
+        Number($("input#number").val(""));
     });
 });
+
+
+
+// if (inNum % 15 == 0){
+//   inNum = "PingPong";
+// }
+// if (inNum % 3 == 0){
+//   inNum = "Ping";
+// }
