@@ -21,7 +21,7 @@ $(document).ready(function() {
             html += "<li>" + outNum[i] + "</li>";
         console.log(outNum);
         document.getElementById("list").innerHTML = html;
-        // $("ul#list").prepend("<li><span class='game'>" + [outNum] + "</span></li>");
+        // $("ul#list").prepend("<li><span class='game'>" + html + "</span></li>");
         Number($("input#number").val(""));
     });
 });
